@@ -1,0 +1,61 @@
+* NGSPICE file created from folded_cascode.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_JEERZ7 w_n144_n462# a_50_n400# a_n50_n426# a_n108_n400#
+X0 a_50_n400# a_n50_n426# a_n108_n400# w_n144_n462# sky130_fd_pr__pfet_g5v0d10v5 ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_NY97Z6 a_50_n200# a_n50_n226# a_n108_n200# VSUBS
+X0 a_50_n200# a_n50_n226# a_n108_n200# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_TNBBPH a_50_n400# a_n50_n426# a_n108_n400# VSUBS
+X0 a_50_n400# a_n50_n426# a_n108_n400# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_TNWANH a_n50_n457# a_50_n369# a_n108_n369# VSUBS
+X0 a_50_n369# a_n50_n457# a_n108_n369# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7 w_n144_n162# a_50_n100# a_n50_n126# a_n108_n100#
+X0 a_50_n100# a_n50_n126# a_n108_n100# w_n144_n162# sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_NYY6SB a_50_n169# a_n108_n169# a_n50_n257# VSUBS
+X0 a_50_n169# a_n50_n257# a_n108_n169# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7 a_50_n136# a_n108_n136# a_n50_n162# w_n144_n198#
+X0 a_50_n136# a_n50_n162# a_n108_n136# w_n144_n198# sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_DEERZ7 a_50_n436# a_n108_n436# a_n50_n462# w_n144_n498#
+X0 a_50_n436# a_n50_n462# a_n108_n436# w_n144_n498# sky130_fd_pr__pfet_g5v0d10v5 ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=0.5
+.ends
+
+.subckt folded_cascode VCC VSS CMFB Vb3 Vb2 Vb1 out out2 N2 N1 N4 N3
+Xsky130_fd_pr__pfet_g5v0d10v5_JEERZ7_2 VCC N2 Vb1 VCC sky130_fd_pr__pfet_g5v0d10v5_JEERZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_JEERZ7_1 VCC VCC Vb1 N2 sky130_fd_pr__pfet_g5v0d10v5_JEERZ7
+Xsky130_fd_pr__nfet_g5v0d10v5_NY97Z6_4 N3 Vb3 out2 VSS sky130_fd_pr__nfet_g5v0d10v5_NY97Z6
+Xsky130_fd_pr__nfet_g5v0d10v5_TNBBPH_0 N3 CMFB VSS VSS sky130_fd_pr__nfet_g5v0d10v5_TNBBPH
+Xsky130_fd_pr__pfet_g5v0d10v5_JEERZ7_3 VCC VCC Vb1 N1 sky130_fd_pr__pfet_g5v0d10v5_JEERZ7
+Xsky130_fd_pr__nfet_g5v0d10v5_TNBBPH_1 N4 CMFB VSS VSS sky130_fd_pr__nfet_g5v0d10v5_TNBBPH
+Xsky130_fd_pr__nfet_g5v0d10v5_TNBBPH_2 VSS CMFB N4 VSS sky130_fd_pr__nfet_g5v0d10v5_TNBBPH
+Xsky130_fd_pr__nfet_g5v0d10v5_TNBBPH_3 VSS CMFB N3 VSS sky130_fd_pr__nfet_g5v0d10v5_TNBBPH
+Xsky130_fd_pr__nfet_g5v0d10v5_TNWANH_1 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5_TNWANH
+Xsky130_fd_pr__nfet_g5v0d10v5_TNWANH_0 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5_TNWANH
+Xsky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7_0 VCC out Vb2 N2 sky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7_2 VCC N2 Vb2 out sky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7_1 VCC N1 Vb2 out2 sky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7_3 VCC out2 Vb2 N1 sky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7
+Xsky130_fd_pr__nfet_g5v0d10v5_NYY6SB_0 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5_NYY6SB
+Xsky130_fd_pr__nfet_g5v0d10v5_NYY6SB_1 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5_NYY6SB
+Xsky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7_0 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7_1 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_DEERZ7_0 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_DEERZ7
+Xsky130_fd_pr__nfet_g5v0d10v5_NY97Z6_0 N4 Vb3 out VSS sky130_fd_pr__nfet_g5v0d10v5_NY97Z6
+Xsky130_fd_pr__pfet_g5v0d10v5_DEERZ7_1 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_DEERZ7
+Xsky130_fd_pr__nfet_g5v0d10v5_NY97Z6_1 out2 Vb3 N3 VSS sky130_fd_pr__nfet_g5v0d10v5_NY97Z6
+Xsky130_fd_pr__nfet_g5v0d10v5_NY97Z6_2 out Vb3 N4 VSS sky130_fd_pr__nfet_g5v0d10v5_NY97Z6
+Xsky130_fd_pr__pfet_g5v0d10v5_JEERZ7_0 VCC N1 Vb1 VCC sky130_fd_pr__pfet_g5v0d10v5_JEERZ7
+.ends
+

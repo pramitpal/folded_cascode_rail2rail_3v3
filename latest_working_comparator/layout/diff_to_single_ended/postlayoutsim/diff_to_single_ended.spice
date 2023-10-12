@@ -1,0 +1,89 @@
+** sch_path: /foss/designs/Comparator/old/schematic/folded_cascode/folded_cascode_tb.sch
+**.subckt folded_cascode_tb
+VINP out out2 sin(0 shift 5e6)
+VVSS VSS 0 0
+VVCC VCC VSS 3.3
+VVIP out2 VSS VREF
+VVB5 vb5 VSS 0.98
+
+x1 VCC vb5 VSS out out2 v diff_to_single_ended
+
+**** begin user architecture code
+
+
+.option chgtol=4e-16 method=gear
+
+.param VREF = 1.2
+.param shift = 50m
+
+**** interactive sim
+.control
+run
+save all
+tran 20n 2u
+plot out vcc vss v vb5 
+.endc
+
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
+
+
+* SPICE3 file created from diff_to_single_ended.ext - technology: sky130A
+
+.subckt diff_to_single_ended VCC vb5 VSS out out2 v
+X0 a_n296_n44# out li_n130_n833# VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.464 ps=4.01 w=2 l=0.5
+X1 VSS vb5 li_n130_n833# VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.139 pd=1.22 as=0.116 ps=1 w=0.5 l=0.5
+X2 li_n130_n833# vb5 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.116 pd=1 as=0.139 ps=1.22 w=0.5 l=0.5
+X3 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.139 pd=1.22 as=0.139 ps=1.22 w=0.5 l=2
+X4 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.139 pd=1.22 as=0.139 ps=1.22 w=0.5 l=2
+X5 li_n130_n833# vb5 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.116 pd=1 as=0.139 ps=1.22 w=0.5 l=0.5
+X6 VSS vb5 li_n130_n833# VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.139 pd=1.22 as=0.116 ps=1 w=0.5 l=0.5
+X7 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.556 pd=4.9 as=0.556 ps=4.9 w=2 l=2
+X8 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.556 pd=4.9 as=0.556 ps=4.9 w=2 l=2
+X9 VCC a_n296_n44# a_n296_n44# VCC sky130_fd_pr__pfet_g5v0d10v5 ad=0.127 pd=1.38 as=0.145 ps=1.58 w=0.5 l=1
+X10 v a_n296_n44# VCC VCC sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.127 ps=1.38 w=0.5 l=1
+X11 VCC a_n296_n44# v VCC sky130_fd_pr__pfet_g5v0d10v5 ad=0.127 pd=1.38 as=0.145 ps=1.58 w=0.5 l=1
+X12 a_n296_n44# a_n296_n44# VCC VCC sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.127 ps=1.38 w=0.5 l=1
+X13 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 ad=0.127 pd=1.38 as=0.127 ps=1.38 w=0.5 l=0.5
+X14 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 ad=0.127 pd=1.38 as=0.127 ps=1.38 w=0.5 l=0.5
+X15 li_n130_n833# out2 v VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.464 pd=4.01 as=0.58 ps=4.58 w=2 l=0.5
+X16 v out2 li_n130_n833# VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.464 ps=4.01 w=2 l=0.5
+X17 li_n130_n833# out a_n296_n44# VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.464 pd=4.01 as=0.58 ps=4.58 w=2 l=0.5
+C0 VCC li_n130_n833# 3.87e-19
+C1 VSS li_n130_n833# 0.871f
+C2 VSS VCC 0.118f
+C3 li_n130_n833# out 0.232f
+C4 VCC out 0.083f
+C5 li_n130_n833# out2 0.147f
+C6 VSS out 0.136f
+C7 VCC out2 0.11f
+C8 VSS out2 0.12f
+C9 li_n130_n833# vb5 0.34f
+C10 a_n296_n44# li_n130_n833# 0.397f
+C11 out out2 0.27f
+C12 VSS vb5 0.205f
+C13 v li_n130_n833# 0.887f
+C14 a_n296_n44# VCC 1.49f
+C15 a_n296_n44# VSS 0.585f
+C16 out vb5 0.0239f
+C17 v VCC 0.359f
+C18 v VSS 0.113f
+C19 a_n296_n44# out 0.224f
+C20 out2 vb5 0.0229f
+C21 v out 0.367f
+C22 a_n296_n44# out2 0.371f
+C23 v out2 0.123f
+C24 a_n296_n44# vb5 8.05e-20
+C25 v vb5 0.00149f
+C26 v a_n296_n44# 0.39f
+C27 a_n296_n44# 0 1.08f
+C28 out 0 0.668f
+C29 li_n130_n833# 0 0.49f
+C30 v 0 0.502f
+C31 out2 0 0.534f
+C32 VCC 0 3.9f
+C33 VSS 0 3.28f
+C34 vb5 0 0.885f
+.ends
