@@ -134,7 +134,7 @@ lab=VCC}
 N 540 550 710 550 {
 lab=v}
 N 850 500 850 560 {
-lab=#net5}
+lab=VV}
 N 890 560 900 560 {
 lab=VSS}
 N 900 560 900 590 {
@@ -148,7 +148,7 @@ lab=VCC}
 N 890 470 900 470 {
 lab=VCC}
 N 750 530 850 530 {
-lab=#net5}
+lab=VV}
 N 190 590 200 590 {
 lab=VSS}
 N 200 590 200 620 {
@@ -256,27 +256,27 @@ lab=VSS}
 N 350 210 490 210 {
 lab=CMFB}
 N 220 210 220 250 {
-lab=#net6}
+lab=#net5}
 N 220 250 590 250 {
-lab=#net6}
+lab=#net5}
 N 590 210 590 250 {
-lab=#net6}
+lab=#net5}
 N 220 150 350 150 {
-lab=#net7}
+lab=#net6}
 N 490 150 590 150 {
-lab=#net8}
-N 530 100 530 150 {
-lab=#net8}
-N 280 100 280 150 {
 lab=#net7}
+N 530 100 530 150 {
+lab=#net7}
+N 280 100 280 150 {
+lab=#net6}
 N 390 180 450 180 {
 lab=AG2}
 N 590 250 590 290 {
-lab=#net6}
+lab=#net5}
 N 550 290 550 320 {
-lab=#net6}
+lab=#net5}
 N 550 290 590 290 {
-lab=#net6}
+lab=#net5}
 N 310 290 310 320 {
 lab=CMFB}
 N 310 290 350 290 {
@@ -892,7 +892,7 @@ C {devices/lab_pin.sym} 490 590 2 0 {name=p81 sig_type=std_logic lab=out2}
 C {devices/lab_pin.sym} -430 660 1 0 {name=p116 sig_type=std_logic lab=CMFB}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 730 500 0 0 {name=M3
 L=0.5
-W=1
+W=6
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -905,7 +905,7 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 730 560 0 0 {name=M5
-L=2
+L=0.5
 W=0.5
 nf=1
 mult=1
@@ -924,7 +924,7 @@ C {devices/lab_pin.sym} 660 550 3 0 {name=p12 sig_type=std_logic lab=v}
 C {devices/lab_pin.sym} 890 530 2 0 {name=p16 sig_type=std_logic lab=VOUT}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 870 500 0 0 {name=M7
 L=0.5
-W=6
+W=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -937,8 +937,8 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 870 560 0 0 {name=M8
-L=1
-W=4
+L=0.5
+W=2
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1360,3 +1360,4 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
+C {devices/lab_pin.sym} 810 530 3 0 {name=p1 sig_type=std_logic lab=VV}

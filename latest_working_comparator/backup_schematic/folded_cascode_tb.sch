@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 -230 -400 570 130 {flags=graph
-y1=-0.0025
+y1=-0.0058
 y2=3.4
 ypos1=-0.025
 ypos2=3.4
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-06
+
+
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -39,16 +39,17 @@ hilight_wave=2
 digital=0
 
 
-color="10 4 15 6"
-node="\\"inn inp - 100 * 1.65 +\\"
+color="10 4"
+node="vout
+x1.v"
 
 
-x1.v
-x1.out
-vout"}
+
+x1=0
+x2=2e-06}
 B 2 1300 -340 2100 190 {flags=graph
-y1=1.2
-y2=1.9
+y1=0.89
+y2=2.3
 ypos1=-0.025
 ypos2=3.4
 divy=5
@@ -80,9 +81,12 @@ hilight_wave=0
 digital=0
 
 
-color="10 4"
-node="x1.out
-x1.out2"}
+
+color="4 5 6 8"
+node="x1.vb1
+x1.vb2
+x1.vb3
+x1.vb5"}
 T {ss- delay: 53.82n
 tt- delay: 17.93n
 ff- delay: 11.86n} 970 -50 0 0 0.5 0.5 {}
@@ -154,7 +158,7 @@ C {devices/launcher.sym} -70 190 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {sky130_fd_pr/corner.sym} 810 -330 0 0 {name=CORNER only_toplevel=true corner=ff}
+C {sky130_fd_pr/corner.sym} 810 -330 0 0 {name=CORNER only_toplevel=true corner=tt}
 C {devices/lab_pin.sym} 570 230 3 1 {name=p8 sig_type=std_logic lab=INP}
 C {devices/lab_pin.sym} 660 270 3 1 {name=p10 sig_type=std_logic lab=INN}
 C {devices/vsource.sym} 730 460 0 0 {name=VINP1 value="pulse(\{-1*shift\} shift 0 10n 10n 250n 500n)"
@@ -165,5 +169,5 @@ C {devices/lab_pin.sym} 730 430 3 1 {name=p14 sig_type=std_logic lab=INN}
 C {devices/lab_pin.sym} 660 330 1 1 {name=p9 sig_type=std_logic lab=INP}
 C {devices/lab_pin.sym} 70 380 2 1 {name=p3 sig_type=std_logic lab=INN}
 C {devices/lab_pin.sym} 70 340 0 0 {name=p4 sig_type=std_logic lab=INP}
-C {devices/parax_cap.sym} 270 420 0 0 {name=C1 gnd=0 value=1p m=1}
+C {devices/parax_cap.sym} 270 420 0 0 {name=C1 gnd=0 value=0.01p m=1}
 C {devices/lab_pin.sym} 270 410 3 1 {name=p18 sig_type=std_logic lab=VOUT}

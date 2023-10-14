@@ -1,0 +1,62 @@
+** sch_path:
+*+ /foss/designs/Comparator/old/schematic/folded_cascode/latest_working_comparator/total.sch
+.subckt total V VCC VSS INN INP Vb1 Vb2 Vb3 Vb5 VREF
+*.PININFO V:O VCC:B VSS:B INN:I INP:I Vb1:I Vb2:I Vb3:I Vb5:I VREF:I
+XM1 N4 CMFB VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=4
+XM2 out Vb3 N4 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=4
+XM9 out2 Vb3 N3 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=4
+XM10 N3 CMFB VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=4
+XM11 out2 Vb2 N1 VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=4
+XM12 out Vb2 N2 VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=4
+XM13 N1 Vb1 VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=1 m=4
+XM14 N2 Vb1 VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=1 m=4
+XM30 CMFB VREF net2 VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=2
+XM31 CMFB VREF net3 VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=2
+XM33 net1 out net2 VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=2
+XM34 net1 out2 net3 VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=2
+XM35 net2 Vb1 VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=2
+XM36 net3 Vb1 VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=2
+XM37 CMFB CMFB VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=0.5 nf=1 m=2
+XM38 net1 net1 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=0.5 nf=1 m=2
+XM41 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=0.5 nf=1 m=1
+XM42 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=0.5 nf=1 m=1
+XM43 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
+XM47 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=1
+XM49 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=1
+XM46 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
+XM50 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
+XM51 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XM52 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XM53 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
+XM54 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=1
+XM55 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XM56 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=1
+XM57 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XC2 CMFB VSS sky130_fd_pr__cap_mim_m3_1 W=7.1 L=6 m=1
+XM3 N2 INN net4 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=8 nf=1 m=2
+XM5 N1 INP net4 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=8 nf=1 m=2
+XM7 N3 INP net5 VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=8 nf=1 m=2
+XM8 net5 Vb1 VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=1 nf=1 m=4
+XM58 net4 Vb5 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=4
+XM59 N4 INN net5 VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=8 nf=1 m=2
+XM60 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=3 nf=1 m=1
+XM61 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=3 nf=1 m=1
+XM62 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=3 nf=1 m=1
+XM63 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=3 nf=1 m=1
+XM64 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1.5 nf=1 m=1
+XM65 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1.5 nf=1 m=1
+XM66 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1.5 nf=1 m=1
+XM67 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1.5 nf=1 m=1
+XM4 net6 net6 VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=1 W=0.5 nf=1 m=2
+XM6 V net6 VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=1 W=0.5 nf=1 m=2
+XM16 V out2 net7 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=2
+XM17 net6 out net7 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=2
+XM18 net7 Vb5 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=4
+XM21 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=2 nf=1 m=1
+XM23 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=0.5 nf=1 m=1
+XM24 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=0.5 nf=1 m=1
+XM25 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=2 nf=1 m=1
+XM26 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=1
+XM44 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=1
+.ends
+.end
