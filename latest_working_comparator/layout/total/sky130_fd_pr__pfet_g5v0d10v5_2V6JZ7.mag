@@ -1,15 +1,8 @@
 magic
 tech sky130A
-timestamp 1697286120
+timestamp 1697289488
 << error_p >>
-rect -87 531 87 533
-rect -87 -531 -72 531
-rect -54 498 54 500
-rect -54 -498 -39 498
-rect 39 -498 54 498
-rect -54 -500 54 -498
-rect 72 -531 87 531
-rect -87 -533 87 -531
+rect -87 -533 87 533
 << nwell >>
 rect -72 -531 72 531
 << mvpmos >>

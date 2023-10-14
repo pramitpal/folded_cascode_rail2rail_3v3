@@ -323,8 +323,6 @@ N 40 210 60 210 {
 lab=VSS}
 N 40 180 60 180 {
 lab=VSS}
-N 40 210 40 290 {
-lab=VSS}
 N 40 350 60 350 {
 lab=VSS}
 N 60 350 120 350 {
@@ -340,8 +338,6 @@ lab=VSS}
 N 760 210 780 210 {
 lab=VSS}
 N 760 180 780 180 {
-lab=VSS}
-N 760 210 760 290 {
 lab=VSS}
 N 720 40 720 70 {
 lab=VCC}
@@ -467,6 +463,8 @@ N -590 430 -590 460 {
 lab=VCC}
 N -630 430 -590 430 {
 lab=VCC}
+N 760 100 760 150 {}
+N 40 100 40 150 {}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} -390 660 0 0 {name=M1
 L=0.5
 W=2
@@ -781,11 +779,6 @@ C {devices/iopin.sym} 910 110 0 0 {name=p83 lab=VCC}
 C {devices/iopin.sym} 910 130 0 0 {name=p98 lab=VSS}
 C {devices/ipin.sym} 930 150 0 0 {name=p105 lab=INN}
 C {devices/ipin.sym} 930 170 0 0 {name=p106 lab=INP}
-C {devices/capa.sym} -70 630 0 0 {name=C1
-m=1
-value=500f
-footprint=1206
-device="ceramic capacitor"}
 C {devices/lab_pin.sym} -370 520 0 1 {name=p75 sig_type=std_logic lab=out}
 C {devices/lab_pin.sym} -1050 380 0 1 {name=p2 sig_type=std_logic lab=VCC}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} -900 380 0 1 {name=M4
@@ -924,7 +917,7 @@ C {devices/lab_pin.sym} 660 550 3 0 {name=p12 sig_type=std_logic lab=v}
 C {devices/lab_pin.sym} 890 530 2 0 {name=p16 sig_type=std_logic lab=VOUT}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 870 500 0 0 {name=M7
 L=0.5
-W=8
+W=10
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1361,3 +1354,4 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 810 530 3 0 {name=p1 sig_type=std_logic lab=VV}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -70 630 0 0 {name=C2 model=cap_mim_m3_1 W=7.1 L=6 MF=1 spiceprefix=X}

@@ -41,6 +41,7 @@ Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_VNB5GC in circuit total (0)(1 instance)
 Flattening unmatched subcell cmfb_block in circuit total (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_JEERZ7 in circuit total (0)(8 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_6LM9S7 in circuit total (0)(4 instances)
@@ -49,13 +50,16 @@ Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_6DL6AA in circuit tota
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_GUWUK4 in circuit total (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_3JERZF in circuit total (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_N2QRHY in circuit total (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_2V6JZ7 in circuit total (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_GX3LZ5 in circuit total (0)(1 instance)
 Flattening unmatched subcell diff_to_single_ended in circuit total (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_NY97Z6 in circuit total (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_NY97Z6 in circuit total (0)(5 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_VNB5GC in circuit total (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CDSXD6 in circuit total (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_DFFFYB in circuit total (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_HGG9EV in circuit total (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_HCV9S7 in circuit total (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_TNTUPH in circuit total (0)(1 instance)
 Flattening unmatched subcell folded_cascode in circuit total (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_JEERZ7#0 in circuit total (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_NY97Z6#0 in circuit total (0)(4 instances)
@@ -74,22 +78,48 @@ Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_GUWUK4#0 in circuit to
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7#0 in circuit total (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_SAC338 in circuit total (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7#0 in circuit total (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_8UT6AQ in circuit total (0)(1 instance)
 
 Class total (0):  Merged 61 parallel devices.
 Class total (1):  Merged 26 parallel devices.
 Subcircuit summary:
 Circuit 1: total                           |Circuit 2: total                           
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_g5v0d10v5 (48->16)      |sky130_fd_pr__pfet_g5v0d10v5 (54->16)      
-sky130_fd_pr__nfet_g5v0d10v5 (42->13)      |sky130_fd_pr__nfet_g5v0d10v5 (50->13)      
+sky130_fd_pr__nfet_g5v0d10v5 (46->17)      |sky130_fd_pr__nfet_g5v0d10v5 (54->17)      
+sky130_fd_pr__pfet_g5v0d10v5 (50->18)      |sky130_fd_pr__pfet_g5v0d10v5 (56->18)      
 sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
-Number of devices: 30                      |Number of devices: 30                      
-Number of nets: 24                         |Number of nets: 24                         
+Number of devices: 36                      |Number of devices: 36                      
+Number of nets: 26                         |Number of nets: 26                         
 ---------------------------------------------------------------------------------------
 Netlists match uniquely with property errors.
-cmfb_block_0//sky130_fd_pr__nfet_g5v0d10v5_GUWUK4_0/sky130_fd_pr__nfet_g5v0d10v5:0 vs. sky130_fd_pr__nfet_g5v0d10v5:M41:
+cmfb_block_0//sky130_fd_pr__pfet_g5v0d10v5_7JP9SF_0/sky130_fd_pr__pfet_g5v0d10v5:0 vs. sky130_fd_pr__pfet_g5v0d10v5:M60:
+ w circuit1: 29   circuit2: 27   (delta=7.14%, cutoff=1%)
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /cmfb_block_0//sky130_fd_pr__pfet_g5v0d10v5_7JP9SF_0/sky130_fd_pr__pfet_g5v0d10v5:0 network:
+  l = 0.5
+  w = 29
+  ps = 1.58
+  as = 0.145
+  pd = 1.58
+  ad = 0.145
+  M = 1
+  l = 1.5
+  w = 17
+  ps = 1.58
+  as = 0.145
+  pd = 1.58
+  ad = 0.145
+  M = 1
+Circuit 2 instance sky130_fd_pr__pfet_g5v0d10v5:M60 network:
+  m = 1
+  nf = 1
+  W = 27
+  L = 0.5
+sky130_fd_pr__pfet_g5v0d10v5_GX3LZ5_0/sky130_fd_pr__pfet_g5v0d10v5:0 vs. sky130_fd_pr__pfet_g5v0d10v5:M27:
+ w circuit1: 5   circuit2: 6   (delta=18.2%, cutoff=1%)
+cmfb_block_0//sky130_fd_pr__nfet_g5v0d10v5_GUWUK4_0/sky130_fd_pr__nfet_g5v0d10v5:0 vs. sky130_fd_pr__nfet_g5v0d10v5:M64:
  w circuit1: 30   circuit2: 18   (delta=50%, cutoff=1%)
-cmfb_block_0//sky130_fd_pr__nfet_g5v0d10v5_GUWUK4_0/sky130_fd_pr__nfet_g5v0d10v5:0 vs. sky130_fd_pr__nfet_g5v0d10v5:M41:
+cmfb_block_0//sky130_fd_pr__nfet_g5v0d10v5_GUWUK4_0/sky130_fd_pr__nfet_g5v0d10v5:0 vs. sky130_fd_pr__nfet_g5v0d10v5:M64:
  l circuit1: 2   circuit2: 1   (delta=66.7%, cutoff=1%)
  w circuit1: 5   circuit2: 1   (delta=133%, cutoff=1%)
 Circuit 1 parallel/series network does not match Circuit 2
@@ -108,7 +138,7 @@ Circuit 1 instance /cmfb_block_0//sky130_fd_pr__nfet_g5v0d10v5_GUWUK4_0/sky130_f
   pd = 1.58
   ad = 0.145
   M = 1
-Circuit 2 instance sky130_fd_pr__nfet_g5v0d10v5:M41 network:
+Circuit 2 instance sky130_fd_pr__nfet_g5v0d10v5:M64 network:
   m = 1
   nf = 1
   W = 18
@@ -121,42 +151,19 @@ Circuit 2 instance sky130_fd_pr__nfet_g5v0d10v5:M41 network:
   nf = 1
   W = 5
   L = 2
-cmfb_block_0//sky130_fd_pr__pfet_g5v0d10v5_7JP9SF_0/sky130_fd_pr__pfet_g5v0d10v5:0 vs. sky130_fd_pr__pfet_g5v0d10v5:M43:
- w circuit1: 29   circuit2: 27   (delta=7.14%, cutoff=1%)
-Circuit 2 parallel/series network does not match Circuit 1
-Circuit 1 instance /cmfb_block_0//sky130_fd_pr__pfet_g5v0d10v5_7JP9SF_0/sky130_fd_pr__pfet_g5v0d10v5:0 network:
-  l = 0.5
-  w = 29
-  ps = 1.58
-  as = 0.145
-  pd = 1.58
-  ad = 0.145
-  M = 1
-  l = 1.5
-  w = 17
-  ps = 1.58
-  as = 0.145
-  pd = 1.58
-  ad = 0.145
-  M = 1
-Circuit 2 instance sky130_fd_pr__pfet_g5v0d10v5:M43 network:
-  m = 1
-  nf = 1
-  W = 27
-  L = 0.5
 
 Subcircuit pins:
 Circuit 1: total                           |Circuit 2: total                           
 -------------------------------------------|-------------------------------------------
-VSS                                        |VSS                                        
-VCC                                        |VCC                                        
-Vb3                                        |Vb3                                        
-Vb2                                        |Vb2                                        
 INN                                        |INN                                        
 INP                                        |INP                                        
 Vb5                                        |Vb5                                        
-V                                          |V                                          
+Vb3                                        |Vb3                                        
+Vb2                                        |Vb2                                        
+VOUT                                       |VOUT                                       
+VCC                                        |VCC                                        
 Vb1                                        |Vb1                                        
+VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes total and total are equivalent.

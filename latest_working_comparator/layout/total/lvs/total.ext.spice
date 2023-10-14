@@ -1,5 +1,9 @@
 * NGSPICE file created from total.ext - technology: sky130A
 
+.subckt sky130_fd_pr__nfet_g5v0d10v5_VNB5GC a_n108_n50# a_50_n50# a_n50_n76# VSUBS
+X0 a_50_n50# a_n50_n76# a_n108_n50# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+.ends
+
 .subckt sky130_fd_pr__pfet_g5v0d10v5_JEERZ7 w_n144_n462# a_50_n400# a_n50_n426# a_n108_n400#
 X0 a_50_n400# a_n50_n426# a_n108_n400# w_n144_n462# sky130_fd_pr__pfet_g5v0d10v5 ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=0.5
 .ends
@@ -56,12 +60,17 @@ Xsky130_fd_pr__pfet_g5v0d10v5_3JERZF_3 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d1
 X0 c1_n856_n600# m3_n896_n640# sky130_fd_pr__cap_mim_m3_1 l=6 w=7.1
 .ends
 
-.subckt sky130_fd_pr__nfet_g5v0d10v5_NY97Z6 a_50_n200# a_n50_n226# a_n108_n200# VSUBS
-X0 a_50_n200# a_n50_n226# a_n108_n200# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
+.subckt sky130_fd_pr__pfet_g5v0d10v5_2V6JZ7 a_n108_n1000# a_50_n1000# w_n144_n1062#
++ a_n50_n1026#
+X0 a_50_n1000# a_n50_n1026# a_n108_n1000# w_n144_n1062# sky130_fd_pr__pfet_g5v0d10v5 ad=2.9 pd=20.6 as=2.9 ps=20.6 w=10 l=0.5
 .ends
 
-.subckt sky130_fd_pr__nfet_g5v0d10v5_VNB5GC a_n108_n50# a_50_n50# a_n50_n76# VSUBS
-X0 a_50_n50# a_n50_n76# a_n108_n50# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+.subckt sky130_fd_pr__pfet_g5v0d10v5_GX3LZ5 a_n108_n464# a_n50_n561# a_50_n464# w_n144_n564#
+X0 a_50_n464# a_n50_n561# a_n108_n464# w_n144_n564# sky130_fd_pr__pfet_g5v0d10v5 ad=1.45 pd=10.6 as=1.45 ps=10.6 w=5 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_NY97Z6 a_50_n200# a_n50_n226# a_n108_n200# VSUBS
+X0 a_50_n200# a_n50_n226# a_n108_n200# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
 .ends
 
 .subckt sky130_fd_pr__nfet_g5v0d10v5_CDSXD6 a_n258_n81# a_200_n81# a_n200_n107# VSUBS
@@ -100,6 +109,10 @@ Xsky130_fd_pr__pfet_g5v0d10v5_HCV9S7_2 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d1
 Xsky130_fd_pr__nfet_g5v0d10v5_NY97Z6_0 li_n130_n833# out2 v VSS sky130_fd_pr__nfet_g5v0d10v5_NY97Z6
 Xsky130_fd_pr__nfet_g5v0d10v5_NY97Z6_2 v out2 li_n130_n833# VSS sky130_fd_pr__nfet_g5v0d10v5_NY97Z6
 Xsky130_fd_pr__nfet_g5v0d10v5_NY97Z6_3 li_n130_n833# out a_n296_n44# VSS sky130_fd_pr__nfet_g5v0d10v5_NY97Z6
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_TNTUPH a_50_n431# a_n50_n457# a_n108_n431# VSUBS
+X0 a_50_n431# a_n50_n457# a_n108_n431# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=0.5
 .ends
 
 .subckt sky130_fd_pr__pfet_g5v0d10v5_JEERZ7#0 w_n144_n462# a_50_n400# a_n50_n426#
@@ -225,14 +238,28 @@ Xsky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7_1 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d1
 Xsky130_fd_pr__pfet_g5v0d10v5_VK4LZ7_0 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_VK4LZ7
 .ends
 
-.subckt total Vb1 Vb2 Vb3 Vb5 VCC VSS INP INN V
+.subckt sky130_fd_pr__nfet_g5v0d10v5_8UT6AQ a_n108_n81# a_50_n81# a_n50_n107# VSUBS
+X0 a_50_n81# a_n50_n107# a_n108_n81# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+.ends
+
+.subckt total Vb1 Vb2 Vb3 Vb5 VCC VSS INP INN VOUT
+Xsky130_fd_pr__nfet_g5v0d10v5_VNB5GC_1 VSS m1_6795_368# diff_to_single_ended_1/v VSS
++ sky130_fd_pr__nfet_g5v0d10v5_VNB5GC
 Xcmfb_block_0 Vb1 cmfb_block_0/CMFB cmfb_block_0/VREF cmfb_block_0/IP VCC VSS cmfb_block_0/IN
 + cmfb_block
 Xsky130_fd_pr__cap_mim_m3_1_N2QRHY_0 VSS cmfb_block_0/CMFB sky130_fd_pr__cap_mim_m3_1_N2QRHY
-Xdiff_to_single_ended_1 cmfb_block_0/IN Vb5 V cmfb_block_0/IP VCC VSS diff_to_single_ended
+Xsky130_fd_pr__pfet_g5v0d10v5_2V6JZ7_0 VCC VOUT VCC m1_6795_368# sky130_fd_pr__pfet_g5v0d10v5_2V6JZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_GX3LZ5_0 VCC diff_to_single_ended_1/v m1_6795_368# VCC
++ sky130_fd_pr__pfet_g5v0d10v5_GX3LZ5
+Xdiff_to_single_ended_1 cmfb_block_0/IN Vb5 diff_to_single_ended_1/v cmfb_block_0/IP
++ VCC VSS diff_to_single_ended
+Xsky130_fd_pr__nfet_g5v0d10v5_TNTUPH_0 cmfb_block_0/VREF VCC VCC VSS sky130_fd_pr__nfet_g5v0d10v5_TNTUPH
 Xfolded_cascode_0 Vb3 Vb2 Vb1 cmfb_block_0/CMFB cmfb_block_0/IN input_stage_0/N4 input_stage_0/N3
 + input_stage_0/N2 cmfb_block_0/IP input_stage_0/N1 VCC VSS folded_cascode
 Xinput_stage_0 Vb5 Vb1 INP input_stage_0/N4 input_stage_0/N3 INN input_stage_0/N2
 + input_stage_0/N1 VCC VSS input_stage
+Xsky130_fd_pr__nfet_g5v0d10v5_NY97Z6_0 VOUT m1_6795_368# VSS VSS sky130_fd_pr__nfet_g5v0d10v5_NY97Z6
+Xsky130_fd_pr__nfet_g5v0d10v5_8UT6AQ_0 VSS cmfb_block_0/VREF cmfb_block_0/VREF VSS
++ sky130_fd_pr__nfet_g5v0d10v5_8UT6AQ
 .ends
 
