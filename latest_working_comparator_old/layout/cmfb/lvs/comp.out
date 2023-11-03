@@ -1,0 +1,75 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__pfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__pfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__nfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__nfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_g5v0d10v5 and sky130_fd_pr__nfet_g5v0d10v5 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_JEERZ7 in circuit cmfb_block (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_6LM9S7 in circuit cmfb_block (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_7JP9SF in circuit cmfb_block (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_6DL6AA in circuit cmfb_block (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_GUWUK4 in circuit cmfb_block (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_3JERZF in circuit cmfb_block (0)(4 instances)
+
+Class cmfb_block (0):  Merged 14 parallel devices.
+Class cmfb_block (1):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: cmfb_block                      |Circuit 2: cmfb_block                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_g5v0d10v5 (18->7)       |sky130_fd_pr__pfet_g5v0d10v5 (18->7)       
+sky130_fd_pr__nfet_g5v0d10v5 (6->3)        |sky130_fd_pr__nfet_g5v0d10v5 (6->3)        
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_g5v0d10v5_GUWUK4_0/sky130_fd_pr__nfet_g5v0d10v5:0 vs. sky130_fd_pr__nfet_g5v0d10v5:M1:
+ l circuit1: 0.5   circuit2: 1   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_g5v0d10v5_7JP9SF_0/sky130_fd_pr__pfet_g5v0d10v5:0 vs. sky130_fd_pr__pfet_g5v0d10v5:M3:
+ l circuit1: 1.5   circuit2: 0.5   (delta=100%, cutoff=1%)
+ w circuit1: 17   circuit2: 10   (delta=51.9%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: cmfb_block                      |Circuit 2: cmfb_block                      
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+IN                                         |IN                                         
+IP                                         |IP                                         
+CMFB                                       |CMFB                                       
+VREF                                       |VREF                                       
+Vb1                                        |Vb1                                        
+VCC                                        |VCC                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cmfb_block and cmfb_block are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ cmfb_block

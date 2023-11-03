@@ -1,0 +1,16 @@
+** sch_path: /foss/designs/Comparator/old/schematic/folded_cascode/single_ended.sch
+.subckt single_ended VCC VSS v out out2 vb5
+*.PININFO VCC:B VSS:B v:O out:I out2:I vb5:I
+XM20 net1 net1 VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=1 W=0.5 nf=1 m=2
+XM22 v net1 VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=1 W=0.5 nf=1 m=2
+XM15 v out2 net2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=2
+XM19 net1 out net2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=2
+XM48 net2 vb5 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=4
+XM27 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=2 nf=1 m=1
+XM28 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=0.5 nf=1 m=1
+XM29 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=0.5 nf=1 m=1
+XM32 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=2 nf=1 m=1
+XM39 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=1
+XM40 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=1
+.ends
+.end

@@ -1,0 +1,69 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698908978
+<< mvndiff >>
+rect -42 658 42 670
+rect -42 624 -30 658
+rect 30 624 42 658
+rect -42 567 42 624
+rect -42 90 42 147
+rect -42 56 -30 90
+rect 30 56 42 90
+rect -42 44 42 56
+rect -42 -56 42 -44
+rect -42 -90 -30 -56
+rect 30 -90 42 -56
+rect -42 -147 42 -90
+rect -42 -624 42 -567
+rect -42 -658 -30 -624
+rect 30 -658 42 -624
+rect -42 -670 42 -658
+<< mvndiffc >>
+rect -30 624 30 658
+rect -30 56 30 90
+rect -30 -90 30 -56
+rect -30 -658 30 -624
+<< mvndiffres >>
+rect -42 147 42 567
+rect -42 -567 42 -147
+<< locali >>
+rect -46 624 -30 658
+rect 30 624 46 658
+rect -46 56 -30 90
+rect 30 56 46 90
+rect -46 -90 -30 -56
+rect 30 -90 46 -56
+rect -46 -658 -30 -624
+rect 30 -658 46 -624
+<< viali >>
+rect -30 624 30 658
+rect -30 584 30 624
+rect -30 90 30 130
+rect -30 56 30 90
+rect -30 -90 30 -56
+rect -30 -130 30 -90
+rect -30 -624 30 -584
+rect -30 -658 30 -624
+<< metal1 >>
+rect -36 658 36 670
+rect -36 584 -30 658
+rect 30 584 36 658
+rect -36 572 36 584
+rect -36 130 36 142
+rect -36 56 -30 130
+rect 30 56 36 130
+rect -36 44 36 56
+rect -36 -56 36 -44
+rect -36 -130 -30 -56
+rect 30 -130 36 -56
+rect -36 -142 36 -130
+rect -36 -584 36 -572
+rect -36 -658 -30 -584
+rect 30 -658 36 -584
+rect -36 -670 36 -658
+<< properties >>
+string gencell sky130_fd_pr__res_generic_nd__hv
+string library sky130
+string parameters w 0.42 l 2.1 m 2 nx 1 wmin 0.42 lmin 2.10 rho 120 val 630.0 dummy 0 dw 0.02 term 0.0 sterm 0.0 caplen 0.4 snake 1 guard 0 glc 1 grc 1 gtc 1 gbc 1 roverlap 0 endcov 100 full_metal 1 vias 1 viagb 0 viagt 0 viagl 0 viagr 0
+<< end >>

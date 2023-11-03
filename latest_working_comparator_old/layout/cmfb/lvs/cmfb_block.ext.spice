@@ -1,0 +1,54 @@
+* NGSPICE file created from cmfb_block.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_JEERZ7 w_n144_n462# a_50_n400# a_n50_n426# a_n108_n400#
+X0 a_50_n400# a_n50_n426# a_n108_n400# w_n144_n462# sky130_fd_pr__pfet_g5v0d10v5 ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_6LM9S7 a_n108_n50# w_n144_n112# a_50_n50# a_n50_n76#
+X0 a_50_n50# a_n50_n76# a_n108_n50# w_n144_n112# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_7JP9SF a_n208_n86# a_150_n86# a_n150_n112# w_n244_n148#
+X0 a_150_n86# a_n150_n112# a_n208_n86# w_n244_n148# sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=1.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_6DL6AA a_100_n50# a_n100_n76# a_n158_n50# VSUBS
+X0 a_100_n50# a_n100_n76# a_n158_n50# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_GUWUK4 a_n108_n19# a_n50_n107# a_50_n19# VSUBS
+X0 a_50_n19# a_n50_n107# a_n108_n19# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_3JERZF w_n244_n498# a_150_n436# a_n208_n436#
++ a_n150_n462#
+X0 a_150_n436# a_n150_n462# a_n208_n436# w_n244_n498# sky130_fd_pr__pfet_g5v0d10v5 ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=1.5
+.ends
+
+.subckt cmfb_block Vb1 VREF IN IP VCC VSS CMFB
+Xsky130_fd_pr__pfet_g5v0d10v5_JEERZ7_10 VCC m1_3052_n816# VREF CMFB sky130_fd_pr__pfet_g5v0d10v5_JEERZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_JEERZ7_11 VCC CMFB VREF m1_3052_n816# sky130_fd_pr__pfet_g5v0d10v5_JEERZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_JEERZ7_12 VCC a_2761_n1936# IN m1_3637_198# sky130_fd_pr__pfet_g5v0d10v5_JEERZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_6LM9S7_4 m1_3637_198# VCC VCC Vb1 sky130_fd_pr__pfet_g5v0d10v5_6LM9S7
+Xsky130_fd_pr__pfet_g5v0d10v5_6LM9S7_5 VCC VCC m1_3052_n816# Vb1 sky130_fd_pr__pfet_g5v0d10v5_6LM9S7
+Xsky130_fd_pr__pfet_g5v0d10v5_JEERZ7_13 VCC m1_3637_198# IN a_2761_n1936# sky130_fd_pr__pfet_g5v0d10v5_JEERZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_6LM9S7_6 m1_3052_n816# VCC VCC Vb1 sky130_fd_pr__pfet_g5v0d10v5_6LM9S7
+Xsky130_fd_pr__pfet_g5v0d10v5_7JP9SF_0 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_7JP9SF
+Xsky130_fd_pr__pfet_g5v0d10v5_JEERZ7_14 VCC m1_3637_198# VREF CMFB sky130_fd_pr__pfet_g5v0d10v5_JEERZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_7JP9SF_1 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_7JP9SF
+Xsky130_fd_pr__pfet_g5v0d10v5_6LM9S7_7 VCC VCC m1_3637_198# Vb1 sky130_fd_pr__pfet_g5v0d10v5_6LM9S7
+Xsky130_fd_pr__pfet_g5v0d10v5_JEERZ7_15 VCC CMFB VREF m1_3637_198# sky130_fd_pr__pfet_g5v0d10v5_JEERZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_JEERZ7_8 VCC a_2761_n1936# IP m1_3052_n816# sky130_fd_pr__pfet_g5v0d10v5_JEERZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_JEERZ7_9 VCC m1_3052_n816# IP a_2761_n1936# sky130_fd_pr__pfet_g5v0d10v5_JEERZ7
+Xsky130_fd_pr__nfet_g5v0d10v5_6DL6AA_0 VSS CMFB CMFB VSS sky130_fd_pr__nfet_g5v0d10v5_6DL6AA
+Xsky130_fd_pr__nfet_g5v0d10v5_GUWUK4_0 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5_GUWUK4
+Xsky130_fd_pr__nfet_g5v0d10v5_GUWUK4_1 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5_GUWUK4
+Xsky130_fd_pr__nfet_g5v0d10v5_6DL6AA_1 VSS a_2761_n1936# a_2761_n1936# VSS sky130_fd_pr__nfet_g5v0d10v5_6DL6AA
+Xsky130_fd_pr__nfet_g5v0d10v5_6DL6AA_2 CMFB CMFB VSS VSS sky130_fd_pr__nfet_g5v0d10v5_6DL6AA
+Xsky130_fd_pr__nfet_g5v0d10v5_6DL6AA_3 a_2761_n1936# a_2761_n1936# VSS VSS sky130_fd_pr__nfet_g5v0d10v5_6DL6AA
+Xsky130_fd_pr__pfet_g5v0d10v5_3JERZF_0 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_3JERZF
+Xsky130_fd_pr__pfet_g5v0d10v5_3JERZF_1 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_3JERZF
+Xsky130_fd_pr__pfet_g5v0d10v5_3JERZF_2 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_3JERZF
+Xsky130_fd_pr__pfet_g5v0d10v5_3JERZF_3 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_3JERZF
+.ends
+

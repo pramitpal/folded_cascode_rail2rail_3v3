@@ -1,0 +1,62 @@
+* NGSPICE file created from input_stage.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_VK4LZ7 a_n108_n836# a_n50_n862# w_n144_n898#
++ a_50_n836#
+X0 a_50_n836# a_n50_n862# a_n108_n836# w_n144_n898# sky130_fd_pr__pfet_g5v0d10v5 ad=2.32 pd=16.6 as=2.32 ps=16.6 w=8 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_VNB5GC a_n108_n50# a_50_n50# a_n50_n76# VSUBS
+X0 a_50_n50# a_n50_n76# a_n108_n50# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_2L5LZ7 a_50_n800# a_n50_n826# a_n108_n800# w_n144_n862#
+X0 a_50_n800# a_n50_n826# a_n108_n800# w_n144_n862# sky130_fd_pr__pfet_g5v0d10v5 ad=2.32 pd=16.6 as=2.32 ps=16.6 w=8 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_SAT828 a_n108_n769# a_n50_n857# a_50_n769# VSUBS
+X0 a_50_n769# a_n50_n857# a_n108_n769# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=2.32 pd=16.6 as=2.32 ps=16.6 w=8 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_GUWUK4 a_n108_n19# a_n50_n107# a_50_n19# VSUBS
+X0 a_50_n19# a_n50_n107# a_n108_n19# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7 w_n144_n162# a_50_n100# a_n50_n126# a_n108_n100#
+X0 a_50_n100# a_n50_n126# a_n108_n100# w_n144_n162# sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_SAC338 a_50_n800# a_n50_n826# a_n108_n800# VSUBS
+X0 a_50_n800# a_n50_n826# a_n108_n800# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=2.32 pd=16.6 as=2.32 ps=16.6 w=8 l=0.5
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7 a_50_n136# a_n108_n136# a_n50_n162# w_n144_n198#
+X0 a_50_n136# a_n50_n162# a_n108_n136# w_n144_n198# sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt input_stage INP INN Vb1 Vb5 N3 N4 N1 N2 VSS VCC
+Xsky130_fd_pr__pfet_g5v0d10v5_VK4LZ7_1 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_VK4LZ7
+Xsky130_fd_pr__nfet_g5v0d10v5_VNB5GC_0 VSS m1_n402_n3849# Vb5 VSS sky130_fd_pr__nfet_g5v0d10v5_VNB5GC
+Xsky130_fd_pr__nfet_g5v0d10v5_VNB5GC_1 VSS m1_n402_n3849# Vb5 VSS sky130_fd_pr__nfet_g5v0d10v5_VNB5GC
+Xsky130_fd_pr__nfet_g5v0d10v5_VNB5GC_2 m1_n402_n3849# VSS Vb5 VSS sky130_fd_pr__nfet_g5v0d10v5_VNB5GC
+Xsky130_fd_pr__nfet_g5v0d10v5_VNB5GC_3 m1_n402_n3849# VSS Vb5 VSS sky130_fd_pr__nfet_g5v0d10v5_VNB5GC
+Xsky130_fd_pr__pfet_g5v0d10v5_2L5LZ7_1 N4 INN m1_n402_61# VCC sky130_fd_pr__pfet_g5v0d10v5_2L5LZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_2L5LZ7_0 N3 INP m1_n402_61# VCC sky130_fd_pr__pfet_g5v0d10v5_2L5LZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_2L5LZ7_2 m1_n402_61# INN N4 VCC sky130_fd_pr__pfet_g5v0d10v5_2L5LZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_2L5LZ7_3 m1_n402_61# INP N3 VCC sky130_fd_pr__pfet_g5v0d10v5_2L5LZ7
+Xsky130_fd_pr__nfet_g5v0d10v5_SAT828_0 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5_SAT828
+Xsky130_fd_pr__nfet_g5v0d10v5_GUWUK4_0 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5_GUWUK4
+Xsky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7_0 VCC m1_n402_61# Vb1 VCC sky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7
+Xsky130_fd_pr__nfet_g5v0d10v5_SAT828_1 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5_SAT828
+Xsky130_fd_pr__nfet_g5v0d10v5_GUWUK4_1 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5_GUWUK4
+Xsky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7_1 VCC m1_n402_61# Vb1 VCC sky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7_2 VCC VCC Vb1 m1_n402_61# sky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7_3 VCC VCC Vb1 m1_n402_61# sky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7
+Xsky130_fd_pr__nfet_g5v0d10v5_SAC338_0 m1_n402_n3849# INN N2 VSS sky130_fd_pr__nfet_g5v0d10v5_SAC338
+Xsky130_fd_pr__nfet_g5v0d10v5_SAC338_1 N2 INN m1_n402_n3849# VSS sky130_fd_pr__nfet_g5v0d10v5_SAC338
+Xsky130_fd_pr__nfet_g5v0d10v5_SAC338_2 m1_n402_n3849# INP N1 VSS sky130_fd_pr__nfet_g5v0d10v5_SAC338
+Xsky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7_0 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7
+Xsky130_fd_pr__nfet_g5v0d10v5_SAC338_3 N1 INP m1_n402_n3849# VSS sky130_fd_pr__nfet_g5v0d10v5_SAC338
+Xsky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7_1 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7
+Xsky130_fd_pr__pfet_g5v0d10v5_VK4LZ7_0 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5_VK4LZ7
+.ends
+

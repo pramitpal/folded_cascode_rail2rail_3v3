@@ -1,0 +1,81 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__pfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__pfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__nfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__nfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_g5v0d10v5 and sky130_fd_pr__nfet_g5v0d10v5 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_JEERZ7 in circuit folded_cascode (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_NY97Z6 in circuit folded_cascode (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_TNBBPH in circuit folded_cascode (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_TNWANH in circuit folded_cascode (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_NQ4LZ7 in circuit folded_cascode (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_NYY6SB in circuit folded_cascode (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7 in circuit folded_cascode (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_DEERZ7 in circuit folded_cascode (0)(2 instances)
+
+Class folded_cascode (0):  Merged 14 parallel devices.
+Class folded_cascode (1):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: folded_cascode                  |Circuit 2: folded_cascode                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_g5v0d10v5 (12->5)       |sky130_fd_pr__pfet_g5v0d10v5 (12->5)       
+sky130_fd_pr__nfet_g5v0d10v5 (12->5)       |sky130_fd_pr__nfet_g5v0d10v5 (12->5)       
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 12                         |Number of nets: 12                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with property errors.
+sky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7_0/sky130_fd_pr__pfet_g5v0d10v5:0 vs. sky130_fd_pr__pfet_g5v0d10v5:M54:
+ w circuit1: 1   circuit2: 0.5   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_g5v0d10v5_ZUVZZ7_0/sky130_fd_pr__pfet_g5v0d10v5:0 vs. sky130_fd_pr__pfet_g5v0d10v5:M54:
+ w circuit1: 4   circuit2: 2   (delta=66.7%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: folded_cascode                  |Circuit 2: folded_cascode                  
+-------------------------------------------|-------------------------------------------
+CMFB                                       |CMFB                                       
+Vb3                                        |Vb3                                        
+out                                        |out                                        
+out2                                       |out2                                       
+N4                                         |N4                                         
+N3                                         |N3                                         
+Vb2                                        |Vb2                                        
+N1                                         |N1                                         
+N2                                         |N2                                         
+Vb1                                        |Vb1                                        
+VSS                                        |VSS                                        
+VCC                                        |VCC                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes folded_cascode and folded_cascode are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ folded_cascode

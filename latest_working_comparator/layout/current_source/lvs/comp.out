@@ -1,0 +1,255 @@
+
+Circuit 1 cell sky130_fd_pr__res_generic_nd__hv and Circuit 2 cell sky130_fd_pr__res_generic_nd__hv are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_generic_nd__hv is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_generic_nd__hv is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_generic_nd__h |Circuit 2: sky130_fd_pr__res_generic_nd__h 
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_generic_nd__hv and sky130_fd_pr__res_generic_nd__hv are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__pfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__pfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__nfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__nfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_g5v0d10v5 and sky130_fd_pr__nfet_g5v0d10v5 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__res_generic_nd__hv_USEA7F in circuit current_source (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_MBRSZA in circuit current_source (0)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_EHRSHC in circuit current_source (0)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_K5LT42 in circuit current_source (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_NYRQZ6 in circuit current_source (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CMVU23 in circuit current_source (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CM22X2 in circuit current_source (0)(14 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_TNTUPH in circuit current_source (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_JSTQTR in circuit current_source (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_UK4LZ5 in circuit current_source (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_KRRUZH in circuit current_source (0)(1 instance)
+
+Class current_source (0):  Merged 29 parallel devices.
+Class current_source (1):  Merged 14 parallel devices.
+Subcircuit summary:
+Circuit 1: current_source                  |Circuit 2: current_source                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_generic_nd__hv (4->1)    |sky130_fd_pr__res_generic_nd__hv (4->1)    
+sky130_fd_pr__pfet_g5v0d10v5 (22->10)      |sky130_fd_pr__pfet_g5v0d10v5 (22->10)      
+sky130_fd_pr__nfet_g5v0d10v5 (25->11)      |sky130_fd_pr__nfet_g5v0d10v5 (27->11)      
+Number of devices: 22                      |Number of devices: 22                      
+Number of nets: 16                         |Number of nets: 16                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_g5v0d10v5_TNTUPH_1/sky130_fd_pr__nfet_g5v0d10v5:0 vs. sky130_fd_pr__nfet_g5v0d10v5:M25:
+ w circuit1: 4   circuit2: 2   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__nfet_g5v0d10v5_NYRQZ6_0/sky130_fd_pr__nfet_g5v0d10v5:0 vs. sky130_fd_pr__nfet_g5v0d10v5:M26:
+ w circuit1: 2   circuit2: 4   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__nfet_g5v0d10v5_CM22X2_9/sky130_fd_pr__nfet_g5v0d10v5:0 vs. sky130_fd_pr__nfet_g5v0d10v5:M70:
+ w circuit1: 4   circuit2: 2   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__nfet_g5v0d10v5_K5LT42_0/sky130_fd_pr__nfet_g5v0d10v5:0 vs. sky130_fd_pr__nfet_g5v0d10v5:M13:
+ w circuit1: 5.4   circuit2: 36   (delta=148%, cutoff=1%)
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /sky130_fd_pr__nfet_g5v0d10v5_K5LT42_0/sky130_fd_pr__nfet_g5v0d10v5:0 network:
+  l = 0.5
+  w = 5.4
+  ps = 11.4
+  as = 1.57
+  pd = 11.4
+  ad = 1.57
+  l = 0.5
+  w = 39.6
+  ps = 27
+  as = 3.83
+  pd = 27
+  ad = 3.83
+  M = 1
+  l = 2
+  w = 3
+  ps = 6.58
+  as = 0.87
+  pd = 6.58
+  ad = 0.87
+  l = 2
+  w = 24
+  ps = 8.58
+  as = 1.16
+  pd = 8.58
+  ad = 1.16
+  M = 1
+Circuit 2 instance sky130_fd_pr__nfet_g5v0d10v5:M13 network:
+  m = 1
+  nf = 1
+  W = 36
+  L = 0.5
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /sky130_fd_pr__nfet_g5v0d10v5_K5LT42_0/sky130_fd_pr__nfet_g5v0d10v5:0 network:
+  l = 0.5
+  w = 5.4
+  ps = 11.4
+  as = 1.57
+  pd = 11.4
+  ad = 1.57
+  l = 0.5
+  w = 39.6
+  ps = 27
+  as = 3.83
+  pd = 27
+  ad = 3.83
+  M = 1
+  l = 2
+  w = 3
+  ps = 6.58
+  as = 0.87
+  pd = 6.58
+  ad = 0.87
+  l = 2
+  w = 24
+  ps = 8.58
+  as = 1.16
+  pd = 8.58
+  ad = 1.16
+  M = 1
+Circuit 2 instance sky130_fd_pr__nfet_g5v0d10v5:M13 network:
+  m = 1
+  nf = 1
+  W = 36
+  L = 0.5
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /sky130_fd_pr__nfet_g5v0d10v5_K5LT42_0/sky130_fd_pr__nfet_g5v0d10v5:0 network:
+  l = 0.5
+  w = 5.4
+  ps = 11.4
+  as = 1.57
+  pd = 11.4
+  ad = 1.57
+  l = 0.5
+  w = 39.6
+  ps = 27
+  as = 3.83
+  pd = 27
+  ad = 3.83
+  M = 1
+  l = 2
+  w = 3
+  ps = 6.58
+  as = 0.87
+  pd = 6.58
+  ad = 0.87
+  l = 2
+  w = 24
+  ps = 8.58
+  as = 1.16
+  pd = 8.58
+  ad = 1.16
+  M = 1
+Circuit 2 instance sky130_fd_pr__nfet_g5v0d10v5:M13 network:
+  m = 1
+  nf = 1
+  W = 36
+  L = 0.5
+Circuit 1 parallel/series network does not match Circuit 2
+Circuit 1 instance /sky130_fd_pr__nfet_g5v0d10v5_K5LT42_0/sky130_fd_pr__nfet_g5v0d10v5:0 network:
+  l = 0.5
+  w = 5.4
+  ps = 11.4
+  as = 1.57
+  pd = 11.4
+  ad = 1.57
+  l = 0.5
+  w = 39.6
+  ps = 27
+  as = 3.83
+  pd = 27
+  ad = 3.83
+  M = 1
+  l = 2
+  w = 3
+  ps = 6.58
+  as = 0.87
+  pd = 6.58
+  ad = 0.87
+  l = 2
+  w = 24
+  ps = 8.58
+  as = 1.16
+  pd = 8.58
+  ad = 1.16
+  M = 1
+Circuit 2 instance sky130_fd_pr__nfet_g5v0d10v5:M13 network:
+  m = 1
+  nf = 1
+  W = 36
+  L = 0.5
+sky130_fd_pr__pfet_g5v0d10v5_MBRSZA_3/sky130_fd_pr__pfet_g5v0d10v5:0 vs. sky130_fd_pr__pfet_g5v0d10v5:M68:
+ w circuit1: 3   circuit2: 2   (delta=40%, cutoff=1%)
+sky130_fd_pr__pfet_g5v0d10v5_EHRSHC_0/sky130_fd_pr__pfet_g5v0d10v5:0 vs. sky130_fd_pr__pfet_g5v0d10v5:M11:
+ w circuit1: 16   circuit2: 56   (delta=111%, cutoff=1%)
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /sky130_fd_pr__pfet_g5v0d10v5_EHRSHC_0/sky130_fd_pr__pfet_g5v0d10v5:0 network:
+  l = 0.5
+  w = 16
+  ps = 16.6
+  as = 2.32
+  pd = 16.6
+  ad = 2.32
+  M = 1
+  l = 2
+  w = 18
+  ps = 6.58
+  as = 0.87
+  pd = 6.58
+  ad = 0.87
+  M = 1
+Circuit 2 instance sky130_fd_pr__pfet_g5v0d10v5:M11 network:
+  m = 1
+  nf = 1
+  W = 56
+  L = 0.5
+sky130_fd_pr__res_generic_nd__hv_USEA7F_2/sky130_fd_pr__res_generic_nd__hv:0 vs. sky130_fd_pr__res_generic_nd__hv:R1:
+ l circuit1: 5.8   circuit2: 6.927   (delta=17.7%, cutoff=1%)
+ w circuit1: 0.415   circuit2: 0.42   (delta=1.2%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: current_source                  |Circuit 2: current_source                  
+-------------------------------------------|-------------------------------------------
+VCC                                        |VCC                                        
+Vb1                                        |Vb1                                        
+Vb2                                        |Vb2                                        
+Vb5                                        |Vb5                                        
+Vb3                                        |Vb3                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes current_source and current_source are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ current_source

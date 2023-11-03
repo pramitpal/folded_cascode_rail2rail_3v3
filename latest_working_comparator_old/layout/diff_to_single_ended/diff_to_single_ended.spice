@@ -1,0 +1,57 @@
+* SPICE3 file created from diff_to_single_ended.ext - technology: sky130A
+
+.subckt diff_to_single_ended VCC vb5 VSS out out2 v
+X0 a_n296_n44# out li_n130_n833# VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
+X1 VSS vb5 li_n130_n833# VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X2 li_n130_n833# vb5 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=2.32 pd=20.1 as=3.34 ps=29.4 w=0.5 l=0.5
+X3 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=2
+X4 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=0.5 l=2
+X5 li_n130_n833# vb5 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X6 VSS vb5 li_n130_n833# VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X7 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=2
+X8 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=2 l=2
+X9 VCC a_n296_n44# a_n296_n44# VCC sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=1
+X10 v a_n296_n44# VCC VCC sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=3.16 as=1.02 ps=11.1 w=0.5 l=1
+X11 VCC a_n296_n44# v VCC sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=0.5 l=1
+X12 a_n296_n44# a_n296_n44# VCC VCC sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=3.16 as=0 ps=0 w=0.5 l=1
+X13 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X14 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=0.5 l=0.5
+X15 li_n130_n833# out2 v VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0 pd=0 as=1.16 ps=9.16 w=2 l=0.5
+X16 v out2 li_n130_n833# VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=2 l=0.5
+X17 li_n130_n833# out a_n296_n44# VSS sky130_fd_pr__nfet_g5v0d10v5 ad=0 pd=0 as=1.16 ps=9.16 w=2 l=0.5
+C0 out2 VSS 0.12f
+C1 out2 v 0.123f
+C2 a_n296_n44# VSS 0.585f
+C3 a_n296_n44# v 0.39f
+C4 li_n130_n833# vb5 0.34f
+C5 a_n296_n44# out2 0.371f
+C6 VSS vb5 0.205f
+C7 li_n130_n833# out 0.232f
+C8 vb5 v 0.00149f
+C9 out2 vb5 0.0229f
+C10 VCC li_n130_n833# 3.87e-19
+C11 a_n296_n44# vb5 8.05e-20
+C12 VSS out 0.136f
+C13 out v 0.367f
+C14 out2 out 0.27f
+C15 VCC VSS 0.118f
+C16 VCC v 0.359f
+C17 VCC out2 0.11f
+C18 a_n296_n44# out 0.224f
+C19 VCC a_n296_n44# 1.49f
+C20 vb5 out 0.0239f
+C21 VCC out 0.083f
+C22 li_n130_n833# VSS 0.871f
+C23 li_n130_n833# v 0.887f
+C24 li_n130_n833# out2 0.147f
+C25 a_n296_n44# li_n130_n833# 0.397f
+C26 VSS v 0.113f
+C27 a_n296_n44# 0 1.08f **FLOATING
+C28 out 0 0.668f
+C29 li_n130_n833# 0 0.49f **FLOATING
+C30 v 0 0.502f
+C31 out2 0 0.534f
+C32 VCC 0 3.9f
+C33 VSS 0 3.28f
+C34 vb5 0 0.885f
+.ends

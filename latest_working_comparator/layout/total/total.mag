@@ -1,9 +1,10 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1697289488
+timestamp 1698929391
 << nwell >>
-rect 588 3022 6914 4593
+rect -2025 3022 6914 4622
+rect -2025 2675 1725 3022
 rect 4105 2340 6914 3022
 rect 4105 2117 6515 2340
 rect 6106 1264 6911 1698
@@ -98,9 +99,15 @@ rect 4222 34 4270 82
 rect 4118 4303 4170 4309
 rect 4813 4303 4859 4306
 rect 4046 4260 4118 4294
+rect -802 4151 -796 4203
+rect -744 4151 -738 4203
+rect -59 4151 -53 4203
+rect -1 4194 5 4203
 rect 289 4194 335 4206
-rect -44 4160 295 4194
+rect -1 4160 295 4194
 rect 329 4160 335 4194
+rect -1 4151 5 4160
+rect -787 4092 -753 4151
 rect 289 4148 335 4160
 rect 1579 4194 1625 4206
 rect 1579 4160 1585 4194
@@ -159,6 +166,9 @@ rect 1979 2065 2025 2077
 rect 1979 2031 1985 2065
 rect 2019 2031 2111 2065
 rect 1979 2019 2025 2031
+rect -917 1302 -883 1383
+rect -932 1250 -926 1302
+rect -874 1250 -868 1302
 rect 2077 270 2111 2031
 rect 4064 1795 4098 2201
 rect 6310 2006 6667 2030
@@ -236,6 +246,8 @@ rect 1846 16 1918 22
 rect 5453 18 6537 52
 rect 6537 3 6589 9
 << via1 >>
+rect -796 4151 -744 4203
+rect -53 4151 -1 4203
 rect 1938 3866 1990 3875
 rect 1938 3832 1947 3866
 rect 1947 3832 1981 3866
@@ -268,6 +280,7 @@ rect 6707 2270 6713 2310
 rect 6713 2270 6747 2310
 rect 6747 2270 6759 2310
 rect 6707 2264 6759 2270
+rect -926 1250 -874 1302
 rect 4758 1752 4810 1804
 rect 6871 2261 6923 2313
 rect 5267 1699 5319 1708
@@ -313,16 +326,24 @@ rect 4170 4294 4176 4303
 rect 4170 4260 4810 4294
 rect 4170 4251 4176 4260
 rect 4810 4245 4862 4251
+rect -796 4203 -744 4209
+rect -53 4203 -1 4209
+rect -744 4160 -53 4194
+rect -796 4145 -744 4151
+rect -53 4145 -1 4151
 rect 1947 3875 1981 3882
 rect 1932 3823 1938 3875
 rect 1990 3823 1996 3875
 rect 1554 3539 1610 3548
-rect -44 3494 1554 3528
+rect -1353 3494 1554 3528
+rect -1353 2799 -1319 3494
 rect 1554 3474 1610 3483
 rect 1557 2890 1566 2901
 rect -117 2856 1566 2890
+rect -117 2705 -83 2856
 rect 1557 2845 1566 2856
 rect 1622 2845 1631 2901
+rect -1118 2671 -83 2705
 rect 1947 2292 1981 3823
 rect 2035 3481 2044 3541
 rect 2104 3528 2113 3541
@@ -359,6 +380,9 @@ rect 5261 1656 5267 1708
 rect 5319 1656 5325 1708
 rect 4136 1429 4188 1435
 rect 4136 1371 4188 1377
+rect -926 1302 -874 1308
+rect -926 1244 -874 1250
+rect -917 526 -883 1244
 rect 4172 1171 4181 1231
 rect 4241 1218 4250 1231
 rect 4241 1184 4281 1218
@@ -383,7 +407,7 @@ rect 6505 553 6539 1188
 rect 6629 696 6681 702
 rect 6629 638 6681 644
 rect 5278 526 5284 535
-rect -24 492 5284 526
+rect -917 492 5284 526
 rect 385 242 419 492
 rect 5278 483 5284 492
 rect 5336 483 5342 535
@@ -520,54 +544,54 @@ rect 4299 1746 4300 1748
 rect 4364 1746 4365 1810
 rect 4299 1745 4365 1746
 use cmfb_block  cmfb_block_0 /foss/designs/Comparator/old/schematic/folded_cascode/latest_working_comparator/layout/cmfb
-timestamp 1697289488
+timestamp 1698929273
 transform 1 0 1927 0 1 3940
 box 2178 -2124 4555 634
+use current_source  current_source_0 /foss/designs/Comparator/old/schematic/folded_cascode/latest_working_comparator/layout/current_source
+timestamp 1698929273
+transform 1 0 -6314 0 1 -116
+box -656 -86 6236 4738
 use diff_to_single_ended  diff_to_single_ended_1 /foss/designs/Comparator/old/schematic/folded_cascode/latest_working_comparator/layout/diff_to_single_ended
-timestamp 1697289488
+timestamp 1698929273
 transform 1 0 4992 0 1 1355
 box -906 -1112 1548 343
 use folded_cascode  folded_cascode_0 /foss/designs/Comparator/old/schematic/folded_cascode/latest_working_comparator/layout/folded_cascode
-timestamp 1697289488
+timestamp 1698929273
 transform 1 0 2899 0 1 3365
 box -742 -2133 1199 1176
 use input_stage  input_stage_0 /foss/designs/Comparator/old/schematic/folded_cascode/latest_working_comparator/layout/input_stage
-timestamp 1697289488
+timestamp 1698929273
 transform 1 0 890 0 1 4022
 box -901 -4108 1102 571
 use sky130_fd_pr__cap_mim_m3_1_N2QRHY  sky130_fd_pr__cap_mim_m3_1_N2QRHY_0
-timestamp 1697289488
+timestamp 1698929273
 transform 1 0 3070 0 1 588
 box -896 -640 896 640
 use sky130_fd_pr__nfet_g5v0d10v5_8UT6AQ  sky130_fd_pr__nfet_g5v0d10v5_8UT6AQ_0
-timestamp 1697289488
+timestamp 1698929273
 transform 0 1 5491 -1 0 114
 box -108 -107 108 107
 use sky130_fd_pr__nfet_g5v0d10v5_NY97Z6  sky130_fd_pr__nfet_g5v0d10v5_NY97Z6_0 /foss/designs/Comparator/old/schematic/folded_cascode/latest_working_comparator/layout/diff_to_single_ended
-timestamp 1697289488
+timestamp 1698929273
 transform 1 0 6734 0 1 1972
 box -108 -226 108 226
-use sky130_fd_pr__nfet_g5v0d10v5_TNTUPH  sky130_fd_pr__nfet_g5v0d10v5_TNTUPH_0
-timestamp 1697289488
+use sky130_fd_pr__nfet_g5v0d10v5_TNTUPH#0  sky130_fd_pr__nfet_g5v0d10v5_TNTUPH_0
+timestamp 1698929273
 transform 0 1 6366 -1 0 114
 box -108 -457 108 457
 use sky130_fd_pr__nfet_g5v0d10v5_VNB5GC  sky130_fd_pr__nfet_g5v0d10v5_VNB5GC_1 /foss/designs/Comparator/old/schematic/folded_cascode/latest_working_comparator/layout/diff_to_single_ended
-timestamp 1697289488
+timestamp 1698929273
 transform 1 0 6734 0 1 365
 box -108 -76 108 76
 use sky130_fd_pr__pfet_g5v0d10v5_2V6JZ7  sky130_fd_pr__pfet_g5v0d10v5_2V6JZ7_0
-timestamp 1697289488
+timestamp 1698929273
 transform 1 0 6734 0 1 3409
 box -174 -1066 174 1066
 use sky130_fd_pr__pfet_g5v0d10v5_GX3LZ5  sky130_fd_pr__pfet_g5v0d10v5_GX3LZ5_0
-timestamp 1697289488
+timestamp 1698929273
 transform 1 0 6734 0 1 1055
 box -174 -564 174 602
 << labels >>
-flabel metal1 s -34 4175 -34 4175 0 FreeSans 800 0 0 0 Vb1
-flabel metal2 s -30 3515 -30 3515 0 FreeSans 800 0 0 0 Vb2
-flabel metal2 s -105 2872 -105 2872 0 FreeSans 800 0 0 0 Vb3
-flabel metal2 s -11 509 -11 509 0 FreeSans 800 0 0 0 Vb5
 flabel locali s 2021 4344 2021 4344 0 FreeSans 800 0 0 0 VCC
 flabel locali s 5296 84 5296 84 0 FreeSans 800 0 0 0 VSS
 flabel metal1 s -36 2090 -36 2090 0 FreeSans 800 0 0 0 INP

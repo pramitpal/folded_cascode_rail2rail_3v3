@@ -1,0 +1,21 @@
+** sch_path: /foss/designs/Comparator/old/schematic/folded_cascode/CMFB_block.sch
+.subckt cmfb_block CMFB VCC VSS IN IP Vb1 VREF
+*.PININFO CMFB:O VCC:B VSS:B IN:I IP:I Vb1:I VREF:I
+XM30 CMFB VREF net2 VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=2
+XM31 CMFB VREF net3 VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=2
+XM33 net1 IN net2 VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=2
+XM34 net1 IP net3 VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=2
+XM35 net2 Vb1 VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=2
+XM36 net3 Vb1 VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=2
+XM37 CMFB CMFB VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=0.5 nf=1 m=2
+XM38 net1 net1 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=0.5 nf=1 m=2
+XM1 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=0.5 nf=1 m=1
+XM2 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=0.5 nf=1 m=1
+XM3 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
+XM5 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=1
+XM6 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=1
+XM4 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=1
+XM7 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=1
+XM8 VCC VCC VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
+.ends
+.end

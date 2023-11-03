@@ -6,7 +6,7 @@ V {}
 S {}
 E {}
 B 2 -230 -400 570 130 {flags=graph
-y1=-0.0058
+y1=-0.002
 y2=3.4
 ypos1=-0.025
 ypos2=3.4
@@ -39,24 +39,25 @@ hilight_wave=2
 digital=0
 
 
-color="10 4"
+color="10 4 6"
 node="vout
-x1.v"
+x1.v
+i(vvcc)"
 
 
 
-x1=0
-x2=2e-06}
+x1=-4e-07
+x2=1.6e-06}
 B 2 1300 -340 2100 190 {flags=graph
-y1=0.89
-y2=2.3
+y1=1.478
+y2=2.848
 ypos1=-0.025
 ypos2=3.4
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-06
+x1=-4e-07
+x2=1.6e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -90,7 +91,7 @@ x1.vb5"}
 T {ss- delay: 53.82n
 tt- delay: 17.93n
 ff- delay: 11.86n} 970 -50 0 0 0.5 0.5 {}
-C {devices/code.sym} 790 40 0 0 {name=COMMANDS1
+C {devices/code_shown.sym} 980 240 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
 spice_ignore=false
@@ -115,7 +116,7 @@ op
 write folded_cascode_tb.raw
 reset
 set appendwrite
-dowhile run < = 10
+dowhile run < = 5
   save all
   tran 20n 2u
   write folded_cascode_tb.raw
@@ -130,7 +131,7 @@ quit
 C {devices/code.sym} 790 -140 0 0 {name=TT_RED_MODELS
 only_toplevel=true
 format="tcleval(@value )"
-value=".lib $::SKYWATER_MODELS/sky130.lib.spice.tt.red tt
+value=".lib $::SKYWATER_MODELS/sky130.lib.spice.ss.red ss
 .include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 "
 spice_ignore=true
@@ -158,7 +159,8 @@ C {devices/launcher.sym} -70 190 0 0 {name=h2
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {sky130_fd_pr/corner.sym} 810 -330 0 0 {name=CORNER only_toplevel=true corner=tt}
+C {sky130_fd_pr/corner.sym} 810 -330 0 0 {name=CORNER only_toplevel=true corner=tt
+spice_ignore=false}
 C {devices/lab_pin.sym} 570 230 3 1 {name=p8 sig_type=std_logic lab=INP}
 C {devices/lab_pin.sym} 660 270 3 1 {name=p10 sig_type=std_logic lab=INN}
 C {devices/vsource.sym} 730 460 0 0 {name=VINP1 value="pulse(\{-1*shift\} shift 0 10n 10n 250n 500n)"
